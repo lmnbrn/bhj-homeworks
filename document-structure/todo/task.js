@@ -19,7 +19,3 @@ function addTask(event) {
         task.querySelector('.task__remove').addEventListener('click', removeTask);
     }
 }
-
-function removeTask() {
-    this.closest('.task').remove();
-}
