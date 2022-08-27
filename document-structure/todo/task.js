@@ -7,6 +7,7 @@ function removeTask() {
 }
 
 function addTask(event) {
+    event.preventDefault();
     if (taskInput.value !== '' && (event.code === 'Enter' || event.type === 'click')) {
         const task = document.createElement('div');
         task.classList.add('task');
